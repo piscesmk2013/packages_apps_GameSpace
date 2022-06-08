@@ -82,8 +82,8 @@
                     android:layout_marginHorizontal="4dp"
                     android:layout_alignParentEnd="true" 
                     android:gravity="end|center_vertical"
-                    android:format12Hour="EEE, MMM ddd"
-                    android:format24Hour="EEE, MMM ddd"
+                    android:format12Hour="yy/MM/dd EEE"
+                    android:format24Hour="yy/MM/dd EEE"
                     android:textSize="16sp" />
             </RelativeLayout>
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 Chaldeaprjkt
+                   2022 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">遊戲空間</string>
+    <string name="settings_summary">管理您的遊戲設置</string>
+    <string name="app_selector_label">選擇你的遊戲</string>
+    <string name="auto_brightness_disabled_title">禁用自動亮度</string>
+    <string name="auto_brightness_disabled_summary">在遊戲中保持亮度穩定</string>
+    <string name="heads_up_disabled_title">禁用浮動通知</string>
+    <string name="heads_up_disabled_summary">遊戲中不允許彈出通知</string>
+    <string name="in_game_preferences_title">遊戲內選項</string>
+    <string name="game_list_title">庫</string>
+    <string name="game_remove_message">您確定要將 %1$s 從您的庫中刪除嗎？ </string>
+    <string name="app_search_title">搜索</string>
+    <string name="three_screenshot_disabled_summary">遊戲中暫時禁用三指滑屏幕截圖</string>
+    <string name="three_screenshot_disabled_title">禁用滑動截圖</string>
+    <string name="state_enabled">已啟用</string>
+    <string name="state_disabled">已禁用</string>
+    <!-- Game Mode -->
+    <string name="game_mode_title">模式</string>
+    <string name="game_mode_unsupported">不支持</string>
+    <string name="game_mode_standard">標準</string>
+    <string name="game_mode_performance">性能</string>
+    <string name="game_mode_battery">電池</string>
+    <string name="heads_up_title">浮動通知</string>
+    <string name="fps_Info_title">FPS 信息</string>
+    <string name="stay_awake_title">保持喚醒</string>
+    <string name="stay_awake_summary">遊戲中保持屏幕喚醒狀態</string>
+    <string name="lock_gesture_title">鎖定手勢</string>
+    <string name="ringer_mode_title">響鈴模式</string>
+    <string name="ringer_mode_silent">靜音</string>
+    <string name="ringer_mode_vibrate">振動</string>
+    <string name="ringer_mode_normal">正常</string>
+    <string name="suppress_fullscreen_intent_title">屏蔽全屏事件</string>
+    <string name="suppress_fullscreen_intent_summary">防止在遊戲中出現來電等全屏事件</string>
+    <string name="per_app_title">配置遊戲</string>
+    <string name="per_app_mode_title">首選模式</string>
+    <string name="per_app_angle_title">使用 ANGLE (實驗性)</string>
+    <string name="per_app_angle_summary">使用 ANGLE 渲染器而不是本機的 GLES 驅動器。 \n警告!! 可能會破壞遊戲圖形, 請謹慎使用!</string>
+    <string name="cant_find_angle_pkg">ANGLE 在您的系統上不可用</string>
+    <string name="per_app_unregister">從庫中刪除 %1$s</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">值: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">默認</string>
+    <string name="custom_seekbar_default_value_to_set">默認值: <xliff:g id="v">%s</xliff:g>\n長按以設置</string>
+    <string name="custom_seekbar_default_value_is_set">已設為默認值</string>
+    <string name="gamespace_menu_opacity_title">覆蓋菜單不透明度級別</string>
+    <string name="adb_disabled_summary">遊戲中暫時禁用 USB ADB 調試</string>
+    <string name="adb_disabled_title">關閉 USB 調試</string>
+    <string name="battery_format">電量: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+    <string name="memory_format">內存: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
+</resources>

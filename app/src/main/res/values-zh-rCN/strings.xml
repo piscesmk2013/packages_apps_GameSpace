@@ -65,6 +65,7 @@
     <string name="notification_mode_hide">不显示</string>
     <string name="notification_mode_headsup">以浮动通知形式显示</string>
     <string name="notification_mode_reticker">以 reTicker 形式显示</string>
+    <string name="notification_mode_danmaku">以弹幕形式显示</string>
     <string name="adb_disabled_summary">游戏中暂时禁用 USB ADB 调试</string>
     <string name="adb_disabled_title">关闭 USB 调试</string>
     <string name="battery_format">电量: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>

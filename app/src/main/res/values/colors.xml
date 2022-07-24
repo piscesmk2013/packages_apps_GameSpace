@@ -10,8 +10,8 @@
     <color name="onPrimary">@android:color/system_neutral1_900</color>
     <color name="onSurface">@android:color/system_neutral1_900</color>
 
-    <color name="barBackgroundCollapsed">#000000</color>
-    <color name="barBackgroundExpanded">#A0000000</color>
+    <color name="barBackgroundCollapsed">#B3000000</color>
+    <color name="barBackgroundExpanded">#B3000000</color>
     <color name="barButtonAccent">@android:color/system_accent1_700</color>
     <color name="barButtonBackground">#000000</color>
     <color name="barButtonRipple">@android:color/system_accent1_400</color>

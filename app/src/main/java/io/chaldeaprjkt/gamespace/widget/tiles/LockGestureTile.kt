@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2022 CorvusOS
+ * Copyright (C) 2023 PixelExperience OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,22 +17,17 @@
 package io.chaldeaprjkt.gamespace.widget.tiles
 
 import android.content.Context
-import android.os.RemoteException
-import android.os.ServiceManager
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import io.chaldeaprjkt.gamespace.R
-import com.android.internal.statusbar.IStatusBarService
-import io.chaldeaprjkt.gamespace.gamebar.GameBarService.Companion.TAG
+import io.chaldeaprjkt.gamespace.utils.di.ServiceViewEntryPoint
+import io.chaldeaprjkt.gamespace.utils.entryPointOf
 
 class LockGestureTile @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : BaseTile(context, attrs) {
 
-    private val statusBarService = IStatusBarService.Stub.asInterface(
-        ServiceManager.getService(Context.STATUS_BAR_SERVICE)
-    )
+    private val screenUtils by lazy { context.entryPointOf<ServiceViewEntryPoint>().screenUtils() }
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
@@ -50,15 +46,11 @@ class LockGestureTile @JvmOverloads constructor(
             }
             appSettings.lockGesture = value
             isSelected = value
+            screenUtils.lockGesture = value
         }
 
     override fun onClick(v: View?) {
         super.onClick(v)
         shouldLockGesture = !shouldLockGesture
-        try {
-            statusBarService.setBlockedGesturalNavigation(shouldLockGesture)
-        } catch (e: RemoteException) {
-            Log.e(TAG, "Failed to toggle gesture")
-        }
     }
 }
